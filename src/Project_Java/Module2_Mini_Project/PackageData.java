@@ -6,10 +6,12 @@ import java.util.ArrayList;
 public class PackageData implements Serializable {
     private String operationType;
     private ArrayList<Student> students;
+    Student student;
 
-    public PackageData(String operationType, ArrayList<Student> students) {
+    public PackageData(String operationType, ArrayList<Student> students, Student student) {
         this.operationType = operationType;
         this.students = students;
+        this.student = student;
     }
 
     public String getOperationType() {
@@ -26,5 +28,13 @@ public class PackageData implements Serializable {
 
     public void setStudents(ArrayList<Student> students) {
         this.students = students;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
     }
 }

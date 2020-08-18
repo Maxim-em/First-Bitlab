@@ -1,10 +1,15 @@
 package Project_Java.Module2_Mini_Project;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private int id;
     private String name;
     private String surname;
     private int age;
+
+    public Student() {
+    }
 
     public Student(int id, String name, String surname, int age) {
         this.id = id;
